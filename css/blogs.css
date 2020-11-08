@@ -1,0 +1,549 @@
+*{
+    margin:0;
+    padding:0;
+    /* background-image:url(../image/preview2.jpg); */
+    /* background-color:white; */
+}
+
+
+
+#blogtitle
+{   width:1300px;
+    height:50px;
+    /* background-color: rgb(255,244,230); */
+    margin:0 auto;
+}
+
+
+.navbar-brand {
+    text-align: center;
+    height: 54px;
+    line-height: 50px;
+    font-size: 28px;
+    opacity: 1;
+    background-color: rgba(0,0,0,0);
+    text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+}
+
+#blogtitle h3
+{
+    text-align:center;
+}
+
+
+
+.header
+{   width:1200px;
+    height:40px;
+    background-color: rgb(232,232,232);
+    margin:30px auto;
+    line-height: 40px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px #888;
+    margin-bottom: 10px;
+}
+.header ul
+{
+    display: flex;
+    margin: 0 auto;
+}
+
+.header ul li
+{
+    list-style-type: none;
+    margin:0 auto;
+}
+
+.header ul li a
+{
+    text-decoration: none;
+    position: relative;
+    z-index: 99;
+    padding:15px;
+    border-radius: 40px 5px;
+}
+
+.header ul li a:hover
+{
+    /* color:red; */
+    background-color: orange;
+   
+}
+.main
+{
+    height:300px;
+    /* background-color: pink; */
+    margin:0 auto;
+    position: relative;
+    z-index: 99;
+    margin-top: 20px;
+    
+}
+
+
+.left
+{
+    width: 270px;
+    height: 300px;
+    float: left;
+}
+
+.main .img1{
+    padding:10px;
+    position: relative;
+    display: block;
+    height: 125px;
+    line-height: 125px;
+    background-color: white;
+    width: 250px;
+}
+
+
+.main .img1:hover{
+
+    transform: scale(1.03);  
+}
+
+/* 这里得用js实现另一种放大 */
+.main .img2:hover{
+
+    transform: scale(1.03);  
+}
+
+.main .img2{
+    padding:10px;
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 125px;
+    line-height: 125px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.main .img3{
+float: left;
+background-color: white;
+padding:10px;
+margin:0 10px;
+
+}
+
+.right
+{
+    width:310px;
+    height:280px;
+    /* background-color: white; */
+    float:right;
+    padding:10px;
+    position: relative;
+    /* box-shadow: white; */
+    background-color: white;
+    border-radius: 5px;
+    margin-left:0;
+}
+.right .imgs{
+    float:right;
+    border-radius: 50%;
+    width:80px;
+    margin-top: 10px;
+    margin-right:10px;
+}
+
+.right li i
+{
+    margin-top:10px;
+    line-height: 100px;
+    padding: 0 0 0 20px;
+}
+
+
+.right span
+{
+    padding: 0 0 0 20px;
+}
+.right p
+{
+    padding: 0 0 0 20px;
+    margin-top:10px;
+}
+.right h2
+{
+    text-align: center;
+}
+
+.headerbottem
+{
+    padding: 5px;
+    border-left: 3px solid blueviolet;
+    margin-bottom: 10px;
+    color: #89919a;
+    font-weight: 600;
+    font-size: 20px;
+    width:845px;
+    height:30px;
+    background-color:rgb(232,232,232);
+    line-height: 30px;
+}
+
+.leftbottom
+{
+    width:860px;
+    background-color: white;
+}
+.headerleft
+{
+    /* float: left; */
+    width: 850px;
+    position: relative;
+    /* background-color: red; */
+    margin:0 auto;
+    height:500px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 99;
+}
+.airticle
+{
+    width:838px;
+    height:200px;
+    /* background-color: #bfa; */
+    padding:5px;
+    border-left: 3px solid blue;
+    position: relative;
+    box-shadow: #ccc 1px 1px 4px 4px;
+    border-left: 5px solid cornflowerblue;
+}
+.airticle a:hover{
+    color:red;
+}
+
+.airticletwo a:hover{
+    color:red;
+}
+
+.noteone
+{
+    width: 545px;
+    height:125px;
+    /* background-color: blue; */
+    float: left;
+    padding:10px;
+    line-height: 24px;
+    font-size: 14px;
+    
+}
+
+
+.notetwo
+{
+    width: 545px;
+    height:125px;
+    /* background-color: blue; */
+    float: left;
+    padding:10px;
+    line-height: 24px;
+    font-size: 14px;
+    
+}
+.airhead
+{
+    width:838px;
+    height:30px;
+    /* background-color: yellow; */
+    /* margin-top: 15px; */
+    margin-left: 10px;
+    line-height: 30px;;
+    text-align: center;
+}
+
+.airticle img{
+    padding:10px;
+    display: block;
+    float: left;
+    position:relative;
+    top:-5px;
+}
+
+
+
+.airticletwo
+{
+    width:838px;
+    height:200px;
+    /* background-color: #bfa; */
+    padding:5px;
+    border-left: 5px solid red;
+    margin-top: 10px;
+    position: relative;
+    box-shadow: #ccc 1px 1px 4px 4px;
+}
+
+.airheadtwo
+{
+    width:818px;
+    height:30px;
+    /* background-color: yellow; */
+    /* margin-top: 15px; */
+    margin-left: 10px;
+    line-height: 30px;;
+    text-align: center;
+}
+.airticletwo img{
+    padding:10px;
+    display: block;
+    float: left;
+    position: relative;
+    top:-5px;
+}
+
+
+
+.circle{
+    width:10px;
+    background-color:red;
+    height:10px;
+    border-radius:50%;
+    position: relative;
+    float:left;
+    padding:5px;
+    
+    /* left:435px; */
+    margin:0 4px;
+}
+#circle1
+{
+    width:115px;
+    /* height:20px; */
+    /* background-color:red; */
+    position:absolute;
+    left:730px;
+    top:260px;
+}
+
+.circle:hover
+{
+    
+    background-color:white;
+}
+.ggcircle
+{
+    background-color:white;
+}
+
+
+
+
+
+
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    /* background: linear-gradient(rgba(0, 108, 172, 1), rgba(0, 122, 195, .7)); */
+    background-color:rgba(93, 78, 112, 0.5);
+    /* background-image: url(../image/preview2.jpg); */
+  }
+  
+  #stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+.star {
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #FFF;
+    top:100px;
+    left:400px;
+    position:relative;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, .3);
+    animation-name: ami;
+    animation-duration: 3s;
+    }
+
+    
+.star:after {
+    content: '';
+    display: block;
+    top: 0px;
+    left: 4px;
+    border: 0px solid #fff;
+    border-width: 2px 90px 2px 90px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, .3);
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%
+}
+
+@keyframes ami{
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(0) translate3d(0, 0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translate3d(-200px, 200px, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+    }
+
+}
+
+
+
+
+/* 日历样式 */
+
+#table td
+{
+  padding:4px 12px;
+  font-size: 19px;
+   color: #565656; 
+}
+
+    .data
+    {
+      width:330px;
+      height:200px;
+      background-color: rgb(221, 218, 224);
+			text-align: center;
+			position:relative;
+			z-index: 99;
+			
+    }
+
+    .icon-fenye-shangyiye
+  {
+    float:left;
+		margin:5px;
+		position: relative;
+		z-index: 999;
+  }
+  .icon-fenye-xiayiye
+  {
+    float:right;
+		margin:5px;
+		position: relative;
+		z-index: 999;
+	}
+/* 日历样式结尾 */
+    
+
+
+    /* 音乐播放器样式 */
+    .music
+{
+	position: absolute;
+	z-index: 999;
+	bottom:0;
+}
+/* 音乐播放器样式结尾 */
+
+
+
+
+/* github连接svg样式 */
+svg
+{
+    position: relative;
+     z-index: 9;
+}
+/* github连接svg样式结尾 */
+
+
+
+
+
+
+.text
+{
+    position: absolute;
+    color:white;
+    font-size:20px;
+    width: 250px;
+    text-align: center;
+    /* 图片上的文字必须要有宽度text-align:center才生效 */
+}
+
+
+
+
+
+
+.imgss{
+    /* width:120px; */
+    height:0;
+    background-color: red;
+    position: absolute;
+    transition: height 0.5s;
+    /* text-align: center; */
+    left:80px;
+    top:275px;
+    /* overflow: hidden; */
+    display: none;
+    /* 这个用来隐藏 */
+}
+
+.layui-icon-login-wechat:hover .imgss{
+    display: block;
+    height:100px;
+    /* padding: 10px; */
+}
+
+
+
+
+/* 公告栏样式 */
+#gongao{
+    width:330px;
+    height:260px;
+    /* background-color: red; */
+    position: relative;
+    margin-top:10px;
+    
+}
+        #gongao h3{
+            text-align: center;
+            background-color: rgb(180, 16, 112);
+            padding:8px;
+        }
+
+        #gongao li
+        {
+            padding:15px;
+            /* text-align: center; */
+            background-color:salmon;
+            margin-top:10px;
+
+        }
+        .rightb
+    {
+        width:330px;
+        height:480px;
+        /* background-color: #bfa; */
+        position: absolute;
+        top:0;
+        right:0;
+    }
+/* 公告栏样式结尾 */
+
+
+
+#clock{
+    position: absolute;
+    left:70px;
+    top:50px;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.2, maximum-scale=2.0, user-scalable=yes" />
+    <title>木子</title>
+			 <!-- 引入字体图标库 -->
+			 <script src="./layui/layui.all.js"></script>
+			 <link rel="stylesheet" href="./layui/css/layui.css">
+
+			 <link rel="stylesheet" href="./iconfont/iconfont.css">
+       <!-- 引入当前页面样式表 -->
+      <link rel="stylesheet" href="./css/blogs.css">
+       <!-- 引入重置样式表 -->
+       <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+        <!-- 引入公共样式表 -->
+				<link rel="stylesheet" href="./css/base.css">
+				<!-- 日历翻页图标字体样式 -->
+				<link rel="stylesheet" href="./iconfont/iconfont.css">
+
+				
+</head>
+<script>
+  window.onload=function()
+  {
+  var stars = document.getElementById('stars')
+
+// js随机生成流星
+for (var j=0;j<50;j++) {
+var newStar = document.createElement("div")
+newStar.className = "star"
+newStar.style.top = randomDistance(800, 0) + 'px'
+newStar.style.left = randomDistance(1920, 0) + 'px'
+stars.appendChild(newStar)
+}
+
+// 封装随机数方法
+function randomDistance (max, min) {
+var distance = Math.floor(Math.random() * (max - min + 1) + min)
+return distance
+}
+
+
+
+var star = document.getElementsByClassName('star')
+
+// 给流星添加动画延时
+for (var i = 0, len = star.length; i < len; i++)
+{
+　　  star[i].style.animationDelay = i % 6 == 0 ? '0s' : i * 0.8 + 's'
+}
+
+
+
+}
+
+
+
+// 头像下图标
+document.getElementById("qq").onclick=function(){
+		alert("暂未开放，敬请期待！")
+	}
+	document.getElementById("weibo").onclick=function(){
+		alert("暂未开放，敬请期待！")
+	}
+
+
+
+</script>
+
+
+
+
+
+<body>
+
+	
+	
+ <!-- 流星雨 -->
+ <div id="stars">
+	<div class="star" style="top: 0px;left: 500px;"></div>
+	</div>
+	 <!-- 流星雨结尾 -->
+
+	
+
+	 <!-- 音乐播放 到时候创建数据库-->
+	 <audio controls="controls" class="music" autoplay="autoplay">
+		<source src="./mp3/曾经我也想一了百了.mp3" type="audio/mpeg" >
+	</audio>
+	<!-- 音乐播放器结尾 -->
+
+
+	<!-- 时钟 -->
+	<canvas id="clock" width="200px" height="200px"></canvas>
+	<!-- 时钟结尾 -->
+
+
+
+
+
+<!-- github -->
+<a href="https://github.com/1018751483" class="github-corner" aria-label="View source on Github">
+	<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+		<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+		<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm">
+		</path>
+		<path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body">
+		</path>
+	</svg>
+</a>
+<!-- github结尾 -->
+
+
+
+
+<div id="blogtitle">
+	<h2  class="navbar-brand">木子</h2>
+	<h3>或许是不知梦的缘故，流离之人追逐幻影。 —-江南 </h3>
+	</div>
+
+<div class="header">
+	<ul>
+		<li>
+			<a href=javascript:;>首页</a>
+		</li>
+		<li>
+			<a href=javascript:;>文章</a>
+		</li>
+		<li>
+			<a href=javascript:;> 随笔</a>
+		</li>
+		<li>
+			<a href=javascript:;>留言</a>
+		</li>
+		<li><a href=javascript:;>MIUI</a></li>
+	</ul>
+</div>
+
+
+
+<div class="main w">
+	<div class="left">
+<<<<<<< HEAD
+		<a href="resume.html" class="img1">
+=======
+		<a href="personal.html" class="img1">
+>>>>>>> update
+			<span class="text">个人简历</span>
+			<img src="./image/jianli.jpg">
+		</a>
+
+
+
+
+
+		<a href="myspace.html" class="img2">
+			<span class="text">我的小世界</span>
+			<img src="./image/kj.jpg">
+		</a>
+	</div>
+
+	<a href=javascript:; class="img3">
+		<img id ="imglunbo" src="./image/bk1.jpg" >
+<!-- 中间轮播图片 -->
+
+
+			<!-- 图片上的原点 -->
+			<div id="circle1">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+	</a>
+
+
+
+	<div class="right">
+		<span style="font-size: 30px;color:blue">个人信息</span>
+		<img src="image/touxiang.jpg" width="40px" class="imgs">
+		<p>网名：木子</p>
+		<p>职业：web前端工程师</p>
+		<p>现居：黑龙江省哈尔滨市</p>
+		<p>爱好：小说、动漫、单车</p>
+		<p>邮箱：1018751483@qq.com</p>
+		<li>
+	
+			<a href="javascript:void(0)"><i id="qq" style="color: blueviolet;font-size: 50px" class="layui-icon layui-icon-login-qq" ></i></a>
+			<a href="javascript:void(0)"><i style="color: yellowgreen;font-size: 50px" class="layui-icon layui-icon-login-wechat"><img src="./image/wechat.png" class="imgss"></i></a>
+					<!-- 这里不能换行，换行的话微信凸后和后面的图标巨鹿会增大 -->
+			<a href="javascript:void(0)"><i id="weibo" style="color: rgb(235,177,33);font-size: 50px" class="layui-icon layui-icon-login-weibo"></i></a>
+			<a href="https://space.bilibili.com/40829022"><i id="bilibili" style="color: indianred;font-size: 50px" class="iconfont icon-Bilibili"></i></a>
+			
+		</li>
+		</div>
+	
+	</div>
+		
+
+
+
+
+	<div class="headerleft w">
+		<div class="leftbottom">
+	
+			<h2 class="headerbottem">文章推荐</h2>
+	
+			<div class="airticle">
+				<div class="airhead">
+					<h3><a href="article1.html" class="article11"><b>文章一:css中div垂直居中常用的几种方法总结</b></a></h3>
+				</div>	
+					<a href="javascript:void(0)" class="img4">
+						<img src="image/kj.jpg">
+					</a>
+				<div class="noteone">元素A中包含B元素，而且B元素有可能是一行文本、多行文本，图片（未知大小），如何让B元素在A元素中实现水平垂直居中效果
+				</div>
+			</div>
+	
+	
+			<div class="airticletwo">
+				<div class="airheadtwo">
+					<h3><a href="dajian.html"><b>文章二:利用github搭建个人网站</b></a></h3>
+				</div>
+				<img src="image/1.jpg">
+				<div class="notetwo">为大家讲解一些怎么搭建属于自己的个人网站。首先，我们并不需要什么前端之类的基础，需要的只是你安静地把这篇教程看下去。当然如果你想要自己装饰自己的网站的话就得有一些前端基础了。
+				</div>
+			</div>
+		</div>
+
+
+	<div class="rightb">
+		<!-- 日历 -->
+	<div class="data">
+    <span id="shangyiye">
+      <a href="javascript:void(0);">
+        <i style="color: blue;font-size: 13px"class="iconfont icon-fenye-shangyiye">
+        </i>
+      </a>
+    </span>
+    <!-- 这里href="javascript:void(0);"相当于一个死链接(怎么点都不会动) 目的是不想然他动,但又想让他出现鼠标小手-->
+    <span id="center">2020年4月</span>
+    <span id="xiayiye">
+      <a href="javascript:void(0);">
+        <i style="color: blue;font-size: 13px"class="iconfont icon-fenye-xiayiye">
+        </i>
+      </a>
+    </span>
+    <br>
+    <table id="table">
+    <tr>
+      <th>日</th>
+      <th>一</th>
+      <th>二</th>
+      <th>三</th>
+      <th>四</th>
+      <th>五</th>
+      <th>六</th>
+     
+    </tr>
+  </table>
+  </div>
+<!-- 日历结尾 -->
+			<div id="gongao">
+				<div>
+				<h3>最新公告</h3>
+				</div>
+				<li><a href="dajian.html">网站上线！（附搭建教程）</a>  2020-09-17</li>
+				<li><a href="js/rili.js">日历小控件制作教程</a></li>
+				<li><a href="js/time.js">时钟小控件制作教程</a></li>
+				<li>js转义符总结</li>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+
+
+
+
+	<!-- 右下角卡通 -->
+    <div id="live2d-widget">
+      <canvas id="live2dcanvas" width="30" height="60" style="position: fixed;opacity: 0.7;right: 0px;bottom: -20px;z-index: 99999;pointer-events: none;border: 1px dashed rgb(204, 204, 204);">
+      </canvas>
+      </div>
+</body>
+<script type="text/javascript" charset="utf-8" async="" src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.0.min.js"></script>
+
+<script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js?_=1557308476616"></script>
+<script type="text/javascript">
+L2Dwidget.init();
+</script>
+<script type="text/javascript">getFollowStatus('df91d846-448f-4c9a-c764-08d6b94b3063')</script>
+
+<!-- 轮播图js -->
+<!-- <script>
+
+var lunbo=document.getElementById("imglunbo");
+var circle=document.getElementsByClassName("circle");
+// var circle1=document.getElementById("circle1");
+var arr=["image/bk1.jpg","image/bk2.jpg","image/bk3.jpg","image/bk4.jpg"];
+var a=0;
+var timer;
+function start(){
+circle[0].style.backgroundColor="white";
+clearInterval(timer);
+timer=setInterval(function(){
+	a++;
+	if(a>=arr.length)
+	{
+		a=0;
+		circle[arr.length-1].style.backgroundColor="red";
+	}
+	imglunbo.src=arr[a];
+	circle[a].style.backgroundColor="white";
+circle[a-1].style.backgroundColor="red";
+},3000);
+
+}
+ start();
+
+// circle[2].style.backgroundColor="white";
+
+
+for(var a=0;a<arr.length;a++)
+{
+	circle[a].num=a;
+	circle[a].onclick=function()
+	{
+		//clearInterval(timer);
+		index=this.num;
+		imglunbo.src=arr[this.num];
+		circle[this.num].style.backgroundColor="white";
+		set();
+	}
+	//这里存在一个问题，上面clearInterval清除定时后该怎么恢复--有种方法是用回调函数，还有没有
+}
+//创建一个函数将所有小图标变红，选中的变白
+function set(){
+	for(var i=0;i<arr.length;i++)
+	{
+	circle[i].style.backgroundColor="";
+	
+	}
+	circle[index].style.backgroundColor="white";
+	
+}
+</script> -->
+
+
+<!-- 日历js -->
+
+<script type='text/javascript' color='22,192,255' zIndex='9' opacity='1' count='99' src='js/umbrella.js'></script>
+<script type='text/javascript' src='js/lunbo.js'></script>
+<script type='text/javascript' src='js/time.js'></script>
+<script type='text/javascript' src='js/rili.js'></script>
+</html>
