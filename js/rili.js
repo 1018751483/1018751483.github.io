@@ -77,29 +77,6 @@ for(var k=1;k<=totalDays;k++)
 
 td[j].innerHTML =k;
 if((k<my_day && year==d1.getFullYear() && month==d1.getMonth()+1) || year<d1.getFullYear() || ( year==d1.getFullYear() && month<d1.getMonth())){ 
-<<<<<<< HEAD
-   td[k+1].style.color="#a8a8a8"; //当该日期在今天之前时，以浅灰色字体显示
-}else if (k==my_day && year==d1.getFullYear() && month==d1.getMonth()+1){
-  // alert(my_day)
-  td[k+3].style.color="#6ac13c"; //当天日期以绿色背景突出显示，当天日期显示有问题
-  td[k+3].style.border="1px solid #6ac13c";
-  td[k+3].style.backgroundColor="#e9f8df";
-  }else{
-    td[k+3].style.color="#565656"; //当该日期在今天之后时，以深灰字体显示
-  }
-j++;
-if(j>=totalDays)
-{
-  td[j].innerHTML ="";
-  td[j+1].innerHTML ="";
-  td[j+2].innerHTML ="";
-  td[j+3].innerHTML ="";
-  td[j+4].innerHTML ="";
-  td[j+5].innerHTML ="";
-  td[j+6].innerHTML ="";
-//这方法简直超级超级笨啊，求优化！！！！
-}
-=======
    td[k-1].style.color="#a8a8a8"; //当该日期在今天之前时，以浅灰色字体显示
 }else if (k==my_day && year==d1.getFullYear() && month==d1.getMonth()+1){
   // alert(my_day)
@@ -111,7 +88,6 @@ if(j>=totalDays)
   }
 j++;
 
->>>>>>> update
 
 }
 }
