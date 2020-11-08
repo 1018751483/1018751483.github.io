@@ -421,7 +421,7 @@ html, body {
       background-color: rgb(221, 218, 224);
 			text-align: center;
 			position:relative;
-			z-index: 99;
+			z-index: 9;
 			
     }
 
@@ -430,14 +430,14 @@ html, body {
     float:left;
 		margin:5px;
 		position: relative;
-		z-index: 999;
+		z-index: 9;
   }
   .icon-fenye-xiayiye
   {
     float:right;
 		margin:5px;
 		position: relative;
-		z-index: 999;
+		z-index: 99;
 	}
 /* 日历样式结尾 */
     
@@ -486,12 +486,12 @@ svg
 .imgss{
     /* width:120px; */
     height:0;
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     transition: height 0.5s;
     /* text-align: center; */
     left:80px;
-    top:275px;
+    top:120px;
     /* overflow: hidden; */
     display: none;
     /* 这个用来隐藏 */
